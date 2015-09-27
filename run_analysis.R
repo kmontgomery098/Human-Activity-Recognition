@@ -41,7 +41,7 @@ complete_tt<-cbind(all_subjects,Activity,tt)
 
 ##################################################################
 #Use descriptibe names to name variables in the dataset 
-VarNam=variable.names(complete_tt) #Setting variable names as VarNam 
+VarNam<-variable.names(complete_tt) #Setting variable names as VarNam 
 VarNam<-gsub("BodyBody","Body",VarNam) #removed redundancy but did not change the names dramatically as to not lose meaning. Descriptions too long to spell out "time" and "frequency"
 VarNam<-gsub("[(][)]-X"," X",VarNam)
 VarNam<-gsub("[(][)]-Y"," Y",VarNam)
